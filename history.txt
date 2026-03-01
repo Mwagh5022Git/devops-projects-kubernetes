@@ -1,0 +1,80 @@
+    1  docker --verion
+    2  docker --version
+    3  mkdir k8s-project
+    4  cd k8s-project
+    5  ls
+    6  [ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.31.0/kind-linux-amd64
+    7  chmod +x ./kind
+    8  sudo mv ./kind /usr/local/bin/kind
+    9  rm -rf kind
+   10  kind --version
+   11  docker ps
+   12  clear
+   13  ls
+   14  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+   15  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+   16  chmod +x kubectl
+   17  mkdir -p ~/.local/bin
+   18  mv ./kubectl ~/.local/bin/kubectl
+   19  # and then append (or prepend) ~/.local/bin to $PATH
+   20  kubectl version --client
+   21  kubectl version --client --output=yaml
+   22  history
+   23  clear
+   24  kubectl get nodes
+   25  ls
+   26  cd ..
+   27  ls
+   28  cp config.yml k8s-project
+   29  cd k8s-project
+   30  ls
+   31  kind create cluster --config=config.yml --name=my-cluster
+   32  cd ..
+   33  kind create cluster --config=config.yml --name=my-cluster
+   34  ls
+   35  apt update
+   36  apt get update
+   37  sudo apt update
+   38  git clone https://github.com/Mwagh5022Git/devops-projects-kubernetes.git
+   39  ls
+   40  cd devops-projects-kubernetes
+   41  ls
+   42  chmod +x install.sh
+   43  ./install.sh
+   44  docker --version
+   45  sudo apt install docker.io -y
+   46  docker version
+   47  sudo usermod -aG docker $USER && newgrp docke
+   48  sudo usermod -aG docker $USER && newgrp docker
+   49  ls
+   50  clear
+   51  ls
+   52  ./install.sh
+   53  ls
+   54  ./install.sh
+   55  [ $(uname -m) = x86_64 ] && curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.31.0/kind-linux-amd64
+   56  chmod +x ./kind
+   57  sudo mv ./kind /usr/local/bin/kind
+   58  rm -rf kind
+   59  kind --version
+   60  vi config.yml
+   61  ls
+   62  vi Install_kubectl.sh
+   63  ls
+   64  chmod +x Install_kubectl.sh
+   65  ls
+   66  ./Install_kubectl.sh
+   67  clear
+   68  ls
+   69  kind create cluster --config=config.yml --name=my-cluster
+   70  kind delete cluster --name my-cluster
+   71  kind get clusters
+   72  kind create cluster --config=config.yml --name=my-cluster
+   73  kubectl get pod
+   74  kind get clusters
+   75  kubectl get nodes
+   76  kubectl cluster-info
+   77  kubectl get pods -A
+   78  kubectl get nodes && kubectl get pods -A
+   79  history
+   80  history > history.txt
